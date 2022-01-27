@@ -4,10 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
     <title>FahrDetails</title>
-    
+    <style>
+        #container1{
+            margin: 3% auto;
+            background: rgba(223, 175, 243, 0.52);
+            width: 500px;
+            height: 480px;
+            font-family: monospace;
+            padding: 0 10px;
+            border-color: gray;
+            text-align: center;
+            align-content: center;
+            padding-block: 2px;
+        }
+        #container2{
+            margin: 2% auto;
+            background: rgba(223, 175, 243, 0.52);
+            width: 500px;
+            height: 180px;
+            font-family: monospace;
+            padding: 0 10px;
+            border-color: gray;
+            text-align:left;
+            align-content: left;
+            padding-block: 2px;
+        }
+        
+        #Reservebutton{
+            color: rgb(249, 250, 252);
+            background: #043a8b;
+            border:0.1px;
+            padding: 5px 15px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 0.5px;
+            padding-left: 15px;
+           font-family: monospace;
+           cursor:pointer;
+           transition:0.5s all;
+           size: 10px;
+           margin-bottom: 4px;
+           margin-inline-start: 10px;
+        }
+        #Deletebutton{
+            color: rgb(249, 250, 252);
+            background: #c40112;
+            border:0.1px;
+            padding: 5px 15px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 0.5px;
+            font-family: monospace;
+            cursor:pointer;
+            transition:0.5s all;
+            size: 10px;
+            margin-left: 277px;
+            margin-top: 5px;
+        }
+
+
+
+
+
+    </style>
 </head>
 <body>
+    <div id="container1">
+    <h1 class="head">Informationen</h1>
+    <!--icon-->
+    
+        <form action="info" name="info" id="view_drive" method="get" >
+            <label for="anbieter">Anbieter: </label>
+            <input type="text" name="anbieter" id="anbieter"><br><br>
+            <label for="fahrtdatum">Fahrtdatum und -uhrzeit: </label>
+            <input type="datetime-local" id="fahrdatum"
+            name="fahrdatum" value="2022-12-02T12:30"
+            min="2018-06-07T00:00" max="2022-12-29T00:00"><br><br>
+            <label for="startort">Von: </label>
+            <textarea name="startort"  required></textarea><br><br>
+            <label for="zielort">Nach: </label>
+            <textarea name="zielort"  required></textarea><br><br>
+            <label for="Anzahlfp">Anzahl freier Plätze: </label>
+            <textarea name="Anzahlfp" cols="4" rows="1" required></textarea><br><br>
+            <label for="fahrkosten">Fahrkosten: </label>
+            <textarea name="fahrkosten" cols="4" rows="1" required></textarea><br><br>
+            <label for="status">Status: </label>
+            <input type="text" name="status" id="status"><br><br>
+            <label for="txtBeschreibung">Beschrebung:</label>
+            <textarea name="txtBeschreibung" id="txtBeschreibung" cols="30" rows="5" required></textarea><br><br><br>
+
+        </form>
+    </div>
+    <div id="container2">
+        <h2>Aktionsliste</h2>
+        <form action="aktionsliste" method="get">
+            <label for="AnzahlR">Anzahl Plätze für Reservierung: </label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            <input type="submit" value="Fahrt reservieren" id="Reservebutton"><br><br>
+            <input type="submit" value="  Fahrt löschen  " id="Deletebutton"><br><br>
+
+
+        </form>
+    </div>
+    <div id="container2">
+        <h2>Bwertungen</h2><br><br><br>
+        <!--complete-->
+    
+        <input type="submit" value=" Fahrt bewerten " id="new_rating" class="Reservebutton"><br><br>
+
+
+
+
+
+    </div>
+
+
+
+
+    </div>
     
 </body>
 </html>
