@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrt erstellen</title>
+    <link rel="stylesheet" href="CSS.css">
+    <style>
+        #container{
+            text-align:end ;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h2 style="text-align: center;">Fahrt erstellen</h2>
+
+        <span style="padding: 10px; padding-left: 200px;">
+        <form name="fahrterstellen" action="" id="new_drive" method="post">
+            <label for="startort">Von: </label>
+            <textarea name="startort"  required></textarea><br><br>
+            <label for="zielort">Bis: </label>
+            <textarea name="zielort"  required></textarea><br><br>
+            <label for="maxkapazität">Maximale Kapazität: </label>
+            <textarea name="maxkapazität" cols="4" rows="1" required></textarea><br><br>
+            <label for="fahrkosten">Fahrkosten: </label>
+            <textarea name="fahrkosten" cols="4" rows="1" required></textarea><br><br>
+            <label for="transportmittel">Transportmittel: </label>
+            Auto <input type="radio" name="transportmittel" value="Auto">
+            Bus  <input type="radio" name="transportmittel" value="Bus">
+            Kleintransporter <input type="radio" name="transportmittel" value="Kleintransporter"><br><br>
+            <label for="fahrtdatum">Fahrtdatum: </label>
+            <input type="datetime-local" id="fahrdatum"
+            name="fahrdatum" value="2022-12-02T12:30"
+            min="2018-06-07T00:00" max="2022-12-29T00:00"><br><br>
+            <label for="txtBeschreibung">Beschrebung:</label>
+            <textarea name="txtBeschreibung" id="txtBeschreibung" cols="30" rows="5" required></textarea><br><br><br>
+            </span>
+            <div id="container">
+                <input type="submit" value="Erstellen">
+             </div>
+             
+
+
+        </form>
+        
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
