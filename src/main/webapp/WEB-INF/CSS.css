@@ -1,0 +1,57 @@
+.wrap {
+    margin: 3% auto;
+    background: rgba(223, 175, 243, 0.52);
+    width: 500px;
+    height: 550px;
+    font-family: monospace;
+    padding: 0 20px;
+    border-color: gray;
+}
+.head {
+    font-size: 25px;
+    padding: 20px;
+    color: rgb(77, 74, 74);
+    letter-spacing: 1px;
+    padding-block-start: 0%;
+    text-align: center;
+}
+.sub-main input[type="submit"] {
+    color: white;
+    background: #404246;
+    border: none;
+    padding: 34px 50px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin: auto;
+    font-family: monospace;
+    cursor:pointer;
+    text-transform:uppercase;
+    transition:0.5s all;
+    size: 10px;
+    
+     
+}
+.sub-main input[type="submit"]:hover {
+    background: #4d5153;
+    color: black;
+    transition:0.5s all;
+    
+     
+}
+.Reservebutton{
+    color: rgb(249, 250, 252);
+    background: #043a8b;
+    border:0.1px;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 0.5px;
+    padding-left: 15px;
+   font-family: monospace;
+   cursor:pointer;
+   transition:0.5s all;
+   size: 10px;
+   margin-bottom: 4px;
+   margin-inline-start: 280px;
+}
