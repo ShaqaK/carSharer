@@ -50,4 +50,3 @@ public class bewertung {
         this.rating = rating;
     }
 }
-
