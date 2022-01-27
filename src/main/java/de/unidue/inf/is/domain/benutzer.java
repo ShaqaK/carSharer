@@ -1,39 +1,41 @@
 package de.unidue.inf.is.domain;
 
+public class Benutzer {
+    private int id;
+    private  String name;
+    private  String Email;
 
-public class benutzer {
-	
-	
-	public benutzer() {};
-	/* CREATE TABLE benutzer (
-	bid SMALLINT NOT NULL GENERATED ALWAYS AS IDENTITY,
-	name VARCHAR(50) NOT NULL,
-  	email VARCHAR(50) NOT NULL UNIQUE,
-  	PRIMARY KEY (bid)
-);*/
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public int getBid() {
-		return bid;
-	}
-	public void setBid(int bid) {
-		this.bid = bid;
-	}
+    public Benutzer(int id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        Email = email;
+    }
+    public Benutzer(){
 
-	private int bid;
-	private String name;
-	private String email;
-	
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
 }
+
